@@ -13,8 +13,6 @@ export default tseslint.config(
       // Temporary compiled files
       "**/*.ts.build-*.mjs",
 
-      ".vercel/*",
-
       // JS files at the root of the project
       "*.js",
       "*.cjs",

@@ -12,10 +12,10 @@ const nodeApp = new Hono();
 nodeApp.use(compress());
 
 nodeApp.use(
-    "/assets/*",
-    serveStatic({
-        root: `./dist/client/`,
-    }),
+  "/assets/*",
+  serveStatic({
+    root: `./dist/client/`,
+  }),
 );
 
 nodeApp.route("/", app!);
@@ -24,6 +24,6 @@ const port = envs.PORT ? parseInt(envs.PORT, 10) : 3000;
 
 console.log(`Server listening on http://localhost:${port}`);
 serve({
-    fetch: nodeApp.fetch,
-    port: port,
+  fetch: nodeApp.fetch,
+  port: port,
 });

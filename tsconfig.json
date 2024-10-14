@@ -19,8 +19,7 @@
     ],
     "types": [
       "vite/client",
-      "vike-react",
-      "vite-plugin-vercel/types"
+      "vike-react"
     ],
     "jsx": "preserve",
     "jsxImportSource": "react"

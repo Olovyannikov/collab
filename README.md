@@ -5,7 +5,7 @@
 Generated with [Bati](https://batijs.dev) ([version 296](https://www.npmjs.com/package/create-bati/v/0.0.296)) using this command:
 
 ```sh
-pnpm create bati --react --mantine --vercel --eslint --prettier
+pnpm create bati --react --mantine --hono --eslint --prettier
 ```
 
 <!--bati:start section="TOC"-->

@@ -18,6 +18,21 @@ export function TodoList({ initialTodoItems }: { initialTodoItems: { text: strin
 
             // Optimistic UI update
             setTodoItems((prev) => [...prev, { text: newTodo }]);
+            try {
+              const response = await fetch("/api/todo/create", {
+                method: "POST",
+                body: JSON.stringify({ text: newTodo }),
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              });
+              await response.blob();
+              setNewTodo("");
+            } catch (e) {
+              console.error(e);
+              // rollback
+              setTodoItems((prev) => prev.slice(0, -1));
+            }
           }}
         >
           <input type="text" onChange={(ev) => setNewTodo(ev.target.value)} value={newTodo} />{" "}
