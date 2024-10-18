@@ -15,11 +15,11 @@ export async function createServer(isProduction: boolean) {
     logger: isProduction
       ? true
       : {
-        level: "warn",
-        transport: {
-          target: "pino-pretty",
+          level: "warn",
+          transport: {
+            target: "pino-pretty",
+          },
         },
-      },
   });
 
   await app.register(import("@fastify/compress"), { global: true });
@@ -42,11 +42,11 @@ export async function createServer(isProduction: boolean) {
 
     await app.register(import("@fastify/helmet"), { contentSecurityPolicy: false });
 
-    // In production, we need to serve our static public ourselves.
-    // (In dev, Vite's middleware serves our static public.)
+    // In production, we need to serve our static assets ourselves.
+    // (In dev, Vite's middleware serves our static assets.)
     await app.register(import("@fastify/static"), {
       root: path.join(directoryRoot, "client", "assets"),
-      prefix: "/public/",
+      prefix: "/assets/",
     });
 
     await app.register(import("@fastify/rate-limit"), {

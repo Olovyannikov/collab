@@ -1,17 +1,16 @@
-import React from "react";
-import { Counter } from "./Counter.js";
+import { useUnit } from "effector-react";
+import { Link } from "~/shared/routing";
 
-export default function Page() {
+import { $random } from "./model";
+
+export default function PageHome() {
+  const random = useUnit($random);
+
   return (
-    <>
-      <h1>My Vike app</h1>
-      This page is:
-      <ul>
-        <li>Rendered to HTML.</li>
-        <li>
-          Interactive. <Counter />
-        </li>
-      </ul>
-    </>
+    <div>
+      <h1>Hello World</h1>
+      <p>Random from server: {random}</p>
+      <Link href={`/example/${random}`}>Go to /example/{random}</Link>
+    </div>
   );
 }

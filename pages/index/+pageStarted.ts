@@ -1,3 +1,3 @@
-import { createPageStart } from "@/shared/config/init";
+import { createPageStart } from "~/shared/init";
 
 export const pageStarted = createPageStart();

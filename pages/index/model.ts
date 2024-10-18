@@ -1,13 +1,18 @@
-import { createEvent, createStore, sample } from "effector";
+import { createEffect, createStore, sample } from "effector";
 
-export const $counter = createStore(0);
-export const counterIncremented = createEvent();
+import { pageStarted } from "./+pageStarted";
+
+const randomFx = createEffect(({ message }: { message: string }) => {
+  const number = Math.round(Math.random() * 1000);
+  return number;
+});
+
+export const $random = createStore(0);
 
 sample({
-  clock: counterIncremented,
-  source: $counter,
-  fn: (counter) => {
-    return counter + 1
-  },
-  target: $counter
-})
+  clock: pageStarted,
+  fn: () => ({ message: "home page started" }),
+  target: randomFx,
+});
+
+$random.on(randomFx.doneData, (_, text) => text);

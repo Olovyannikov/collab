@@ -1,3 +1,56 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/node,linux,macos
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,linux,macos
+
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### macOS Patch ###
+# iCloud generated files
+*.icloud
+
+### Node ###
 # Logs
 logs
 *.log
@@ -83,9 +136,6 @@ web_modules/
 .cache
 .parcel-cache
 
-# firebase-admin service-account
-firebase
-
 # Next.js build output
 .next
 out
@@ -131,14 +181,15 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# Cloudflare
-.wrangler/
+### Node Patch ###
+# Serverless Webpack directories
+.webpack/
 
-# Sentry Vite Plugin
-.env.sentry-build-plugin
+# Optional stylelint cache
 
-# aws-cdk
-.cdk.staging
-cdk.out
+# SvelteKit build / generate output
+.svelte-kit
 
-.idea
+# End of https://www.toptal.com/developers/gitignore/api/node,linux,macos
+
+dist

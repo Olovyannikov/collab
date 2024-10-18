@@ -1,8 +1,8 @@
 import { allSettled, fork, serialize } from "effector";
 import { redirect } from "vike/abort";
 import type { OnBeforeRenderAsync } from "vike/types";
-import { appStarted } from "@/shared/config/init";
-import { $redirectTo } from "@/shared/routing";
+import { appStarted } from "~/shared/init";
+import { $redirectTo } from "~/shared/routing";
 
 // https://vike.dev/onBeforeRender
 export const onBeforeRender: OnBeforeRenderAsync = async (pageContext) => {

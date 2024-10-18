@@ -18,7 +18,7 @@
     "verbatimModuleSyntax": true,
 
     "paths": {
-      "@/*": ["src/*"]
+      "~/*": ["src/*"]
     }
   },
   "ts-node": {
