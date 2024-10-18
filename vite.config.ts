@@ -1,9 +1,12 @@
 import react from "@vitejs/plugin-react";
 import {defineConfig} from "vite";
 import vike from "vike/plugin";
-import {resolve} from "node:path";
+import { dirname, resolve } from "node:path";
 import svgr from "vite-plugin-svgr";
+import { fileURLToPath } from "node:url";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default defineConfig({
     ssr: {noExternal: ["effector-factorio"]},
