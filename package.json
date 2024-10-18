@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "node --no-warnings --loader ts-node/esm server/index.ts",
-    "start": "cross-env NODE_ENV=production pnpm run server",
+    "start": "cross-env NODE_ENV=production npm run server",
     "server": "node ./dist/cli/index",
     "build": "vite build && tsc -p server",
     "test": "echo \"Error: no test specified\" && exit 1",
