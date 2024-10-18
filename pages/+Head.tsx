@@ -1,7 +1,7 @@
 // https://vike.dev/Head
 
 import React from "react";
-import logoUrl from "../assets/logo.svg";
+import logoUrl from "../public/logo.svg";
 
 import { ColorSchemeScript } from "@mantine/core";
 

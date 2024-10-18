@@ -2,10 +2,10 @@
 
 <!--bati:start section="intro"-->
 
-Generated with [Bati](https://batijs.dev) ([version 296](https://www.npmjs.com/package/create-bati/v/0.0.296)) using this command:
+Generated with [Bati](https://batijs.dev) ([version 297](https://www.npmjs.com/package/create-bati/v/0.0.297)) using this command:
 
 ```sh
-pnpm create bati --react --mantine --hono --eslint --prettier
+pnpm create bati --react --mantine --fastify --eslint --prettier
 ```
 
 <!--bati:start section="TOC"-->

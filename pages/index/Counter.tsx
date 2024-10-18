@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import { useUnit } from "effector-react";
+import { $counter, counterIncremented } from "./model";
 
 export function Counter() {
-  const [count, setCount] = useState(0);
+  const [count, increment] = useUnit([$counter, counterIncremented]);
 
   return (
-    <button type="button" onClick={() => setCount((count) => count + 1)}>
+    <button type="button" onClick={increment}>
       Counter {count}
     </button>
   );
