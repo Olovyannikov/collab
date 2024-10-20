@@ -9,116 +9,116 @@ importers:
   .:
     dependencies:
       '@effector/reflect':
-        specifier: ^9.2.0
+        specifier: 9.2.0
         version: 9.2.0(effector-react@23.2.1(effector@23.2.2)(react@18.3.1))(effector@23.2.2)(react@18.3.1)
       '@fastify/accepts':
-        specifier: ^4.3.0
+        specifier: 4.3.0
         version: 4.3.0
       '@fastify/compress':
-        specifier: ^7.0.3
+        specifier: 7.0.3
         version: 7.0.3
       '@fastify/cookie':
-        specifier: ^9.3.1
+        specifier: 9.3.1
         version: 9.3.1
       '@fastify/cors':
-        specifier: ^9.0.1
+        specifier: 9.0.1
         version: 9.0.1
       '@fastify/early-hints':
-        specifier: ^1.0.1
+        specifier: 1.0.1
         version: 1.0.1
       '@fastify/helmet':
-        specifier: ^11.1.1
+        specifier: 11.1.1
         version: 11.1.1
       '@fastify/rate-limit':
-        specifier: ^9.1.0
+        specifier: 9.1.0
         version: 9.1.0
       '@fastify/static':
-        specifier: ^7.0.4
+        specifier: 7.0.4
         version: 7.0.4
       compression:
-        specifier: ^1.7.4
+        specifier: 1.7.4
         version: 1.7.4
       dotenv:
-        specifier: ^16.4.5
+        specifier: 16.4.5
         version: 16.4.5
       effector:
-        specifier: ^23.2.2
+        specifier: 23.2.2
         version: 23.2.2
       effector-factorio:
-        specifier: ^1.3.0
+        specifier: 1.3.0
         version: 1.3.0(effector@23.2.2)(react@18.3.1)
       effector-react:
-        specifier: ^23.2.1
+        specifier: 23.2.1
         version: 23.2.1(effector@23.2.2)(react@18.3.1)
       fastify:
-        specifier: ^4.28.1
+        specifier: 4.28.1
         version: 4.28.1
       patronum:
-        specifier: ^2.2.0
+        specifier: 2.2.0
         version: 2.2.0(effector@23.2.2)
       pino:
-        specifier: ^9.3.2
+        specifier: 9.3.2
         version: 9.3.2
       react:
-        specifier: ^18.3.1
+        specifier: 18.3.1
         version: 18.3.1
       react-dom:
-        specifier: ^18.3.1
+        specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
       vike:
         specifier: 0.4.184
         version: 0.4.184(react-streaming@0.3.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.4.1(@types/node@22.3.0))
       vike-react:
-        specifier: ^0.5.2
+        specifier: 0.5.2
         version: 0.5.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vike@0.4.184(react-streaming@0.3.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.4.1(@types/node@22.3.0)))
       zod:
-        specifier: ^3.23.8
+        specifier: 3.23.8
         version: 3.23.8
     devDependencies:
       '@babel/parser':
-        specifier: ^7.25.3
+        specifier: 7.25.3
         version: 7.25.3
       '@babel/plugin-syntax-import-attributes':
-        specifier: ^7.24.7
+        specifier: 7.24.7
         version: 7.24.7(@babel/core@7.25.2)
       '@trivago/prettier-plugin-sort-imports':
-        specifier: ^4.3.0
+        specifier: 4.3.0
         version: 4.3.0(prettier@3.3.3)
       '@types/compression':
-        specifier: ^1.7.5
+        specifier: 1.7.5
         version: 1.7.5
       '@types/node':
-        specifier: ^22.3.0
+        specifier: 22.3.0
         version: 22.3.0
       '@types/react':
-        specifier: ^18.3.3
+        specifier: 18.3.3
         version: 18.3.3
       '@types/react-dom':
-        specifier: ^18.3.0
+        specifier: 18.3.0
         version: 18.3.0
       '@vitejs/plugin-react':
-        specifier: ^4.3.1
+        specifier: 4.3.1
         version: 4.3.1(vite@5.4.1(@types/node@22.3.0))
       cross-env:
-        specifier: ^7.0.3
+        specifier: 7.0.3
         version: 7.0.3
       pino-pretty:
-        specifier: ^11.2.2
+        specifier: 11.2.2
         version: 11.2.2
       prettier:
-        specifier: ^3.3.3
+        specifier: 3.3.3
         version: 3.3.3
       ts-node:
-        specifier: ^10.9.2
+        specifier: 10.9.2
         version: 10.9.2(@types/node@22.3.0)(typescript@5.5.4)
       typescript:
-        specifier: ^5.5.4
+        specifier: 5.5.4
         version: 5.5.4
       vite:
-        specifier: ^5.4.1
+        specifier: 5.4.1
         version: 5.4.1(@types/node@22.3.0)
       vite-plugin-svgr:
-        specifier: ^4.2.0
+        specifier: 4.2.0
         version: 4.2.0(rollup@4.20.0)(typescript@5.5.4)(vite@5.4.1(@types/node@22.3.0))
 
 packages:
@@ -1929,7 +1929,7 @@ snapshots:
 
   '@babel/generator@7.17.7':
     dependencies:
-      '@babel/types': 7.17.0
+      '@babel/types': 7.25.2
       jsesc: 2.5.2
       source-map: 0.5.7
 

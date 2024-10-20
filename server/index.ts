@@ -7,7 +7,7 @@ const isProduction = CONFIG.NODE_ENV === "production";
 const server = await createServer(isProduction);
 console.log("Server routes:\r\n", server.printRoutes());
 
-const listenHost = await server.listen({ host: "0.0.0.0", port: CONFIG.SERVER_PORT });
+const listenHost = await server.listen({ host: '0.0.0.0', port: CONFIG.SERVER_PORT });
 console.info(`Server listening at ${listenHost}`);
 
 // Listen to typical SIGINT and SIGTERM signals
